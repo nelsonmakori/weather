@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>rock paper game</title>
+</head>
+<body>
+  <p>rock paper scissors</p>
+  <button onclick="
+  
+  ">Rock</button>
+  <button>paper</button>
+  <button>scissors</button>
+  <br>
+  <br>
+
+  <button>subscribe</button>
+  <p>Amazon shipping calculator</p>
+  <input placeholder="cost of order" class="cost" onkeydown="console.log('typing')">
+  <button id="calc">calculate</button>
+  <p class="total-cost" onkeydown="console.log('typing')"></p>
+
+
+  <script>
+    let hour = 6;
+    let name = "nelson"
+    if(hour >= 1 && hour < 12){
+      console.log(`good morning ${name}`)
+    }  if(hour >= 12 && hour < 17){
+      console.log('good afternoon')
+    }
+    
+    else{
+      console.log('good night')
+    }
+    
+    let cartQuantity = 11;
+    if(cartQuantity > 10){
+     // console.log(alert('the cart is full and dont update the quantity'))
+    } else if(cartQuantity < 11){
+      console.log(`your cart has ${cartQuantity} items`)
+
+    }
+    function greet(name){
+      console.log(` hello ${name}`)
+      
+    }
+    greet('hi there')
+
+    const product = {
+      name:'basketball',
+      price:2095,
+      delivery:["3pm","3 days"]
+    }
+    console.log(product.delivery)
+    console.log(product.price + 5.00)
+    
+    const calc = document.getElementById('calc')
+    const input1 = document.querySelector('.cost')
+    const totalCost = document.querySelector('.total-cost')
+    
+     calc.addEventListener('click',()=>{
+     let cost = Number (input1.value)
+     if(cost < 50){
+      cost =  Number(cost + 10)
+      
+     }
+     3
+     totalCost.innerHTML = `$${cost}`
+  
+     })
+
+     function walkDog(){
+      
+      return new Promise((resolve, reject) => {
+        setTimeout(()=>{
+          const walkDog = true
+      if(walkDog){
+        resolve('you walked the dog')
+      }
+      else{
+        reject('you did not walk the dog')
+      } 
+        },1000)
+      })
+      
+     }
+     function cleanKitchen(){
+  
+    
+      
+      return new Promise((resolve, reject) => {
+        setTimeout(()=>{
+          const cleanKitchen = true
+      if(cleanKitchen){
+         resolve('you cleaned kitchen')
+      }
+      else{
+        reject('you didnt clean kitchen')
+      }
+      },500)
+      })
+      
+     }
+     function takeOutTrash(){
+      
+      return new Promise((resolve, reject) => {
+        setTimeout(()=>{
+          const takeOutTrash = true;
+      if(takeOutTrash){
+        resolve('you took trash out')
+      }else{
+        reject('you did not take trash out')
+      }
+      },200)
+      })
+      
+     }
+     walkDog().then(value =>{console.log(value);return cleanKitchen()})
+              .then(value => {console.log(value); return takeOutTrash()})
+              .then(value => {console.log(value); console.log('you finished all the work good job')}) 
+              .catch(error =>console.error(error));
+
+              let p = new Promise((resolve, reject) => {
+                let a = 2 +2
+                if(a == 4){
+                  resolve('correct')
+                }
+                else{
+                  reject('you failed')
+                }
+              })
+              p.then((message)=>{
+                console.log(message)
+              }).catch((message)=>{
+                console.error(message)
+              })
+   </script>                      
+</body>
+</html>

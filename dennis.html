@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .display{
+      border: 1px solid black;
+      height: 40px;
+      width: 30px;
+    }
+  </style>
+  <body>
+    
+
+
+
+
+
+
+    <script>
+       
+     
+
+     
+
+
+
+
+
+      class AirtelMoney {
+        constructor(balance) {
+          this.balance = balance;
+          
+        }
+        deposit = (depositAmount) => {
+          this.balance = depositAmount + this.balance;
+          console.log(
+            `you deposited ${depositAmount} and your balance is ${this.balance}`
+          );
+        };
+
+        amountOut = (withDraw) => {
+          this.balance = this.balance - withDraw;
+          console.log(`you withdrawed ${withDraw} and your balance is ${this.balance}`)
+        
+          
+        };
+      }
+
+      const airtelMoney = new AirtelMoney(100);
+      //const deposit = 100;
+      //const withDraw = 20;
+
+      airtelMoney.deposit(50);
+      airtelMoney.amountOut(10);
+
+      class Person{
+        constructor(name,email,password){
+          this.name = name
+          this.email = email
+          this.password = password
+        }
+        person = ()=>{
+          console.log(`${this.name} his email is ${this.email}`)
+        }
+        passpin = (password)=>{
+          if(this.password === 1234){
+            console.log('you successfull logged in')
+          }
+         else if(password === 'string'){
+            console.log('your password cant be in words')
+          }
+          else{
+            console.log(`your password is wrong`)
+          }
+        }
+
+      
+      }
+      const person1 = new Person('nelson','nelsonmakori@yahoo.com',1234)
+      const person2 = new Person('Deno','Denmao.gmail.com')
+      const person3 = new Person ('allegra','allegramakosh@yahoo.com',)
+      person3.person()
+      person1.passpin()
+      
+      class Restaurant{
+        constructor(name,price){
+          this.name = name;
+          this.price = price
+
+        }
+       
+        calculateTotal = (tip)=>{
+          const hapo = this.price * tip;
+          const total =Math.round(this.price + hapo)
+          console.log(`you ordered ${this.name} your total was ${this.price} and your total including tip is ${total}`)
+          
+        }
+        
+      }
+      const customer1  = new Restaurant('slim 3 and 3',35.99)
+      const customer2 = new Restaurant('5 and 5',22.99)
+
+
+    
+      //customer1.calculatTotal();
+      customer2.calculateTotal(0.15)
+
+     
+      
+
+      
+
+    </script>
+  </body>
+</html>

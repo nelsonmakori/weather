@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="wellsfargo.css">
+  <title>Document</title>
+  
+</head>
+<body>
+  <input class="input1" placeholder="write here">
+    <p class="text">noth has been typed yet</p>
+    
+    <div class="color"></div>
+    <input class="change">
+    
+    
+  
+
+  <script>
+    const firstName = " nelson";
+    const lastName = 'MAKORI';
+    const sentence = 'hello' + firstName + " " + lastName +  'how are you';
+    console.log(sentence)
+     
+    let friendsAtYourParty = 0;
+    while(friendsAtYourParty < 10){
+      console.log('another friend joined your party')
+      friendsAtYourParty = friendsAtYourParty + 1
+    }
+    console.log(friendsAtYourParty)
+  
+
+    let watu = 0;
+    for(let i = 0;i < 100;i++){
+    watu++
+    }
+    console.log(watu)
+
+    const timesToRepeat = 000;
+    const character = '👦';
+   let answer = ''
+   for(let i = 0;i < timesToRepeat;i++){
+      answer = answer + character
+    }
+    console.log(answer)
+     
+    const myHomeCountry = "kenya";
+    const myHomeCity = ' molo';
+    const resite = "usa"
+
+    function profile(country,city,resite){
+      console.log(`i am from ${country} ${city} and resides in ${resite}`)
+    }
+    profile(myHomeCountry,myHomeCity,resite)
+    
+
+   const input = document.querySelector('.input1')
+    const paragraph = document.querySelector('.text')
+
+    input.addEventListener('keyup', function(){
+      paragraph.innerText = input.value
+   
+    })
+
+    const input1 = document.querySelector('.change')
+    const paragraph1 = document.querySelector('.color')
+    input1.addEventListener('change',function(){
+      paragraph1.style.backgroundColor = input1.value
+
+    })
+
+    
+
+  </script>
+</body>
+</html>

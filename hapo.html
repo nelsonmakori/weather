@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="addCart">show Quantity</button>
+  <button id="addCart1">add to cart</button>
+  <button id="add2">+2</button>
+  <button id="add3">+3</button>
+  <button id="resetCart">reset cart</button>
+  
+
+
+  <Script>
+
+let cartQuantity = 0;
+
+const showquantity = document.getElementById('addCart');
+const addCart = document.getElementById('addCart1')
+const add3 = document.getElementById('add3');
+const add2 = document.getElementById('add2')
+const resetCart = document.getElementById('resetCart')
+
+showquantity.addEventListener('click',()=>{
+  console.log(`your cart has ${cartQuantity} items`)
+  
+
+})
+
+addCart.addEventListener('click',()=>{
+  cartQuantity ++
+  console.log(`your cart has ${cartQuantity}`)
+})
+
+add2.addEventListener('click',() => {
+  cartQuantity = cartQuantity + 2;
+  console.log(`showquantity: ${cartQuantity}`)
+  
+})
+
+add3.addEventListener('click',() => {
+    cartQuantity = cartQuantity + 3;
+    console.log(`you added ${cartQuantity} items`)
+})
+resetCart.addEventListener('click',() => {
+  cartQuantity = 0;
+  console.log(`cartquanity  ${cartQuantity}`)
+})
+  </Script>
+</body>
+</html>

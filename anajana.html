@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="wellsfargo.css">
+  <title>Document</title>
+</head>
+<body>
+  <input type="text" id="input1">
+  <button id="btn1">click me</button>
+  <p class="pata" id="paragraph"></p>
+
+  <div class="quiz">
+    <input class="text" type="text" name="text">
+    <button  class="sawa">true </button>
+    <br>
+    <button id="asanti">false</button>
+
+  </div>
+  
+
+
+  <script>
+   /* class Mpesa{
+      constructor(deposit){
+        this.deposit = deposit,
+        this.balance = balance,
+        this.withDraw = withDraw,
+        this.result1 = function(){
+          let balance = 0;
+          if(balance < 10){
+            console.log('you dont have enough money to withdraw')
+          }
+        
+        }
+        this.result2 = function (){
+          console.log(`you deposited ${this.deposit} + ${this.balance} `)
+        }
+        this.result3 = function (){
+          console.log(`you withdrawed ${this.withDraw} - ${this.balance} `)
+        }
+
+          }
+        }
+      
+    
+
+    const deposit = new Mpesa(500);
+    const balance = new Mpesa(100);
+    const withDraw = new Mpesa(100);
+     
+    const mpesaDeposit = deposit + balance;
+    const mpesaWithDraw = withDraw - balance;
+
+    balance.result1()
+    deposit.result2()
+    withDraw.result3()
+    */
+    
+    class AitelMoney{
+      constructor(deposit,balance){
+        this.deposit = deposit,
+        //this.withdraw = withdraw,
+        this.balance = balance,
+
+        this.calculateTotal = () => {
+          const deposit = this.deposit;
+          const balanceAfterDeposit = deposit + this.balance;
+         // const obe = this.withdraw;
+          const balance = this.balance;
+          //const sokoro = obe - mbuya;
+          
+            
+          console.log(`you deposited ${deposit} and your balance is ${balanceAfterDeposit}`)
+          console.log(`you withdraw ${balance} and your balance is ${deposit}`)
+          };
+
+          this.showBalance =  () => {
+            if(balance < 10){
+              console.log(`you dont have enough money to withdraw your balance is ${balance}`)
+
+            }
+          }
+
+          }
+          
+        }
+      
+    const total = new AitelMoney(100,9)
+    total.calculateTotal()
+    total.showBalance()
+
+    if(AitelMoney.balance < 10){
+            console.log(`you dont have enough money to withdrawa your balance is ${balance}`)
+          }
+     
+    const password = 1992;
+    if(password === 1992){
+      console.log('loggedin successful')
+    }else{
+      console.log('wromg password')
+    }
+
+   
+  
+    let numbers1 =[1,2,3];
+    let result1 = numbers1.push(4);
+    console.log(result1)
+    
+
+    let numbers2 =[1,2,3];
+    let result2 = numbers2.concat([4]);
+    console.log(result2)
+    
+    
+    const nelson = {
+      fullName:['nelson','oyugi'],
+      Home:'kenya',
+      Race:'black',
+      hobbies:['running','netflix','driving'],
+      vehicle:'c250 mercedese',
+      age:20
+    }
+
+    console.log(nelson.fullName)
+    nelson.Home.length
+    nelson.fullName.push('makori')
+    console.log(nelson.fullName)
+    nelson.vehicle = 'c63 amg'
+    console.log(nelson.vehicle)
+    console.log(`nelson he is from ${nelson.Home} and he drives ${nelson.vehicle}`)
+
+    const spiceGirls ={
+      albums:['spice','spiceworld']
+    }
+    console.log(spiceGirls.albums[1])
+    
+    let mimi = 1+1;
+     mimi = 2
+    if(mimi === 2){
+      console.log('you got it')
+    }else{
+      console.log('keep trying')
+    } true;
+
+    const andika = document.getElementsByClassName('sawa')
+     const btn = document.getElementById('asanti');
+     
+     btn.addEventListener('click',(event) => {
+      btn.textContent = btn.toUpperCase()
+     });
+      const fullName =['nelson','oyugi']
+      if(fullName[0].length > fullName[1]){
+        console.log('first name is longer than last name')
+      }else{
+        console.log(`${fullName[0]} is longer than ${fullName[1]}`)
+      }
+      
+    
+
+      
+    
+    
+
+    
+
+    
+  </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+.text-Box{
+  border: 2px solid black;
+  width: 40%;
+  height: 40px;
+  font-weight: bolder;
+  font-size: 2em;
+  text-align: center;
+  margin-left: 16px;
+}
+h1{
+  color:blue
+}
+form{
+  text-align: center;
+  border: 1px solid black;
+  width: 350px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px gray;
+  border: none;
+  background-color: white;
+  margin-top: 15px;
+  
+}
+.submit{
+  margin-right: 66px;
+  background-color: rgb(179, 26, 41);
+  color: white;
+  border:none ;
+  
+}
+body{
+  padding: 0;
+  margin: 0;
+  background-color: rgb(250, 245, 245);
+  font-size: 20px;
+}
+#changeColors{
+  background-color: blueviolet;
+  width: 30%;
+  height: 30vh;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
+  font-size: 40px;
+  
+}
+.scavenger{
+  background-color: lightskyblue;
+  width: 30%;
+  margin-left: 30px;
+  border: 1px solid #892be2;
+}
+h3{
+  font-style: italic;
+  margin-left: 30px;
+}
+.pata{
+  border: 1px solid yellowgreen;
+  height: 15vh;
+  width: 30%;
+}
+.quiz{
+  margin-left: 30px;
+ /* border: 1px solid yellow; */
+  margin: auto;
+  width: 50%;
+  
+
+
+}
+.sawa{
+  width: 50%;
+  color: white;
+  background-color: gray;
+  margin-top: 10px;
+}
+#asanti{
+  width: 50%;
+  color: white;
+  background-color: navajowhite;
+}
+.text{
+  width: 50%;
+  border:none;
+  height: 40px;
+  box-shadow: 5px 3px 1px;
+}
+.color{
+  width: 40%;
+  height: 70px;
+  border: 1px solid black;
+  background-color: #892be2;
+}
